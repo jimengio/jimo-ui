@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "@components/*": ["components/*"],
+      "@styles/*": ["styles/*"],
+      "@example/*": ["../example/*"]
+    }
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "useCache": true
+  },
+  "exclude": ["node_modules", "lib", "dist"]
+}
