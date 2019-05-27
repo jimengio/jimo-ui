@@ -55,7 +55,7 @@ module.exports = {
     new DuplicatePackageCheckerPlugin(),
     // new BundleAnalyzerPlugin(),
   ],
-  devtool: "cheap-source-map",
+  devtool: "none",
   stats: {
     all: false,
     colors: true,

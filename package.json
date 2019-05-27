@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --hot",
-    "release": "webpack --config webpack.release.js",
+    "release": "rm -rvf dist && webpack --config webpack.release.js",
     "remove-lib": "rm -rf lib",
     "prettier": "node ./scripts/prettier.js",
     "compile": "tsc -d -p tsconfig.build.json --outDir lib/",
