@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Route, HashRouter } from "react-router-dom";
 import Dashboard from "./dashboard";
-import "@jimengio/jasmin-ui/lib/assets/antd/antd.min.css";
 
 class ExampleApp extends React.Component<any, any> {
   render() {
