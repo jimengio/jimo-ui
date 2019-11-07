@@ -1,4 +1,4 @@
 {
   "extends": "./tsconfig.base.json",
-  "exclude": ["node_modules", "lib", "dist", "example"]
+  "exclude": ["node_modules", "lib", "dist", "example", "stories", "src/**/stories"]
 }

@@ -1,12 +1,14 @@
-
 src
 example
 dist
+stories
+.storybook
 .git
 .vscode
 .awcache
 .gitignore
 tsconfig.json
+tsconfig.*.json
 webpack.config.js
 template.ejs
 yarn.lock
