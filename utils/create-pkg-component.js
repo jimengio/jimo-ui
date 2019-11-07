@@ -15,6 +15,7 @@ const task = require("./task");
 const fmt = require("./fmt");
 
 const componentTemplate = require("./template/component-template");
+const componentStoriesTemplate = require("./template/component-stories-template");
 
 const packageName = process.argv[2];
 
@@ -49,6 +50,13 @@ module.exports = task("create-package-components", async () => {
   await fs.writeFile(path.join(packageDir, "index.tsx"), getIndexFile(componentNames));
 
   await Promise.all(componentNames.map(componentName => createComponent({ componentName, packageDir })));
+
+  // Create `stories` dir in package
+  await fs.ensureDir(path.join(packageDir, "stories"));
+  await fs.writeFile(
+    path.join(packageDir, "stories", `index.stories.tsx`),
+    componentStoriesTemplate({ packageName, componentNames: componentNames.map(n => fmt.camelCase(n)) })
+  );
 });
 
 async function createComponent({ componentName, packageDir }) {
