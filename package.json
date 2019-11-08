@@ -9,6 +9,7 @@
     "dev": "webpack-dev-server --hot",
     "storybook": "start-storybook -p 8001",
     "create-pkg-component": "node ./utils/create-pkg-component.js",
+    "sync-stories-md": "node ./utils/get-stories-markdown.js",
     "release": "rm -rvf dist && webpack --config webpack.release.js",
     "remove-lib": "rm -rf lib",
     "prettier": "node ./scripts/prettier.js",
