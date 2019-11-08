@@ -84,4 +84,4 @@ addParameters({
   },
 });
 
-configure(require.context("../src", true, /\.stories\.tsx?$/), module);
+configure([require.context("../src", true, /\.stories\.tsx?$/), require.context("../stories", true, /\.stories\.tsx?$/)], module);
