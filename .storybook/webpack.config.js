@@ -9,7 +9,6 @@ module.exports = ({ config }) => {
       // Optional
       {
         loader: require.resolve("react-docgen-typescript-loader"),
-        // options: { tsconfigPath: "./" },
       },
     ],
   });

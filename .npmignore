@@ -2,6 +2,8 @@ src
 example
 dist
 stories
+src/**/stories
+storybook-static
 .storybook
 .git
 .vscode

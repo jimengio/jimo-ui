@@ -16,7 +16,7 @@ let didError = false;
 
 let files = [];
 
-const ignoreFiles = ["**/node_modules/**", "lib/**", "**/dist/**"];
+const ignoreFiles = ["**/node_modules/**", "lib/**", "**/dist/**", "storybook-static/**"];
 
 // get all ts files
 const tsFiles = glob.sync("**/*.ts*", {

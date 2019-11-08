@@ -10,5 +10,5 @@
   "awesomeTypescriptLoaderOptions": {
     "useCache": true
   },
-  "exclude": ["node_modules", "lib", "dist"]
+  "exclude": ["node_modules", "lib", "dist", "stories", "storybook-static", "src/**/stories"]
 }
