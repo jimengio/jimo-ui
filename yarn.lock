@@ -1298,6 +1298,11 @@
   dependencies:
     emotion "^10.0.17"
 
+"@jimengio/jimo-icons@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@jimengio/jimo-icons/-/jimo-icons-0.2.4.tgz#8229e1f44ea7977baf5993c5e4e087e8aba5fdc1"
+  integrity sha512-BLriEbudAJr1rWtrL7xd9JszWjFACKP2iojHbqEZo44GnnsikCzMBxVeEalGYIEdwX3Arf1KyhQrMCbblP/2Vw==
+
 "@jimengio/shared-utils@^0.1.5":
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/@jimengio/shared-utils/-/shared-utils-0.1.5.tgz#c6435e34674ef389abdb23a97f713ea14fc3b8e1"

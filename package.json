@@ -31,6 +31,7 @@
   "dependencies": {
     "@jimengio/flex-styles": "^0.1.6",
     "@jimengio/jimo-basics": "^0.0.1-a4",
+    "@jimengio/jimo-icons": "^0.2.4",
     "@jimengio/shared-utils": "^0.1.5",
     "emotion": "^10.0.9"
   },
