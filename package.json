@@ -12,7 +12,7 @@
     "build": "yarn release",
     "serve": "http-server dist/ -s",
     "compile": "tsc -d --project tsconfig-compile.json --outDir lib/",
-    "upload": "rsync -avr --progress dist/ fe.jimu.io:~/repo/jimengio/ts-workflow",
+    "upload": "rsync -avr --progress dist/ fe.jimu.io:~/repo/jimengio/jimo-ui",
     "gen-router": "ts-node -P tsconfig-node.json -r tsconfig-paths/register example/gen-router.ts",
     "postinstall": "rm -rfv node_modules/@types/*/node_modules/@types/react"
   },
@@ -21,7 +21,10 @@
   "license": "ISC",
   "devDependencies": {
     "@jimengio/ci-progress-webpack-plugin": "^0.1.0",
+    "@jimengio/doc-frame": "^0.1.5",
+    "@jimengio/flex-styles": "^0.1.6",
     "@jimengio/router-code-generator": "^0.2.5",
+    "@jimengio/shared-utils": "^0.1.5",
     "@types/lodash": "^4.14.146",
     "@types/node": "^12.12.7",
     "@types/prettier": "^1.18.3",
@@ -54,6 +57,7 @@
     "webpack-hud": "^0.1.2"
   },
   "dependencies": {
+    "@jimengio/jimo-basics": "^0.0.1-a4",
     "@jimengio/ruled-router": "^0.2.19",
     "dayjs": "^1.8.17",
     "emotion": "^10.0.23",

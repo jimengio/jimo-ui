@@ -21,17 +21,59 @@ export let genRouter = {
     path: () => `/home`,
     go: () => switchPath(`/home`),
   },
-  content: {
-    name: "content",
-    raw: "content",
-    path: () => `/content`,
-    go: () => switchPath(`/content`),
+  buttons: {
+    name: "buttons",
+    raw: "buttons",
+    path: () => `/buttons`,
+    go: () => switchPath(`/buttons`),
   },
-  else: {
-    name: "else",
-    raw: "else",
-    path: () => `/else`,
-    go: () => switchPath(`/else`),
+  tabs: {
+    name: "tabs",
+    raw: "tabs",
+    path: () => `/tabs`,
+    go: () => switchPath(`/tabs`),
+  },
+  icons: {
+    name: "icons",
+    raw: "icons",
+    path: () => `/icons`,
+    go: () => switchPath(`/icons`),
+  },
+  tables: {
+    name: "tables",
+    raw: "tables",
+    path: () => `/tables`,
+    go: () => switchPath(`/tables`),
+  },
+  forms: {
+    name: "forms",
+    raw: "forms",
+    path: () => `/forms`,
+    go: () => switchPath(`/forms`),
+  },
+  modal: {
+    name: "modal",
+    raw: "modal",
+    path: () => `/modal`,
+    go: () => switchPath(`/modal`),
+  },
+  drawer: {
+    name: "drawer",
+    raw: "drawer",
+    path: () => `/drawer`,
+    go: () => switchPath(`/drawer`),
+  },
+  dropdown: {
+    name: "dropdown",
+    raw: "dropdown",
+    path: () => `/dropdown`,
+    go: () => switchPath(`/dropdown`),
+  },
+  imageViewer: {
+    name: "image-viewer",
+    raw: "image-viewer",
+    path: () => `/image-viewer`,
+    go: () => switchPath(`/image-viewer`),
   },
   $: {
     name: "home",
@@ -41,7 +83,18 @@ export let genRouter = {
   },
 };
 
-export type GenRouterTypeMain = GenRouterTypeTree["home"] | GenRouterTypeTree["content"] | GenRouterTypeTree["else"] | GenRouterTypeTree["$"];
+export type GenRouterTypeMain =
+  | GenRouterTypeTree["home"]
+  | GenRouterTypeTree["buttons"]
+  | GenRouterTypeTree["tabs"]
+  | GenRouterTypeTree["icons"]
+  | GenRouterTypeTree["tables"]
+  | GenRouterTypeTree["forms"]
+  | GenRouterTypeTree["modal"]
+  | GenRouterTypeTree["drawer"]
+  | GenRouterTypeTree["dropdown"]
+  | GenRouterTypeTree["imageViewer"]
+  | GenRouterTypeTree["$"];
 
 export interface GenRouterTypeTree {
   home: {
@@ -50,14 +103,56 @@ export interface GenRouterTypeTree {
     query: {};
     next: null;
   };
-  content: {
-    name: "content";
+  buttons: {
+    name: "buttons";
     params: {};
     query: {};
     next: null;
   };
-  else: {
-    name: "else";
+  tabs: {
+    name: "tabs";
+    params: {};
+    query: {};
+    next: null;
+  };
+  icons: {
+    name: "icons";
+    params: {};
+    query: {};
+    next: null;
+  };
+  tables: {
+    name: "tables";
+    params: {};
+    query: {};
+    next: null;
+  };
+  forms: {
+    name: "forms";
+    params: {};
+    query: {};
+    next: null;
+  };
+  modal: {
+    name: "modal";
+    params: {};
+    query: {};
+    next: null;
+  };
+  drawer: {
+    name: "drawer";
+    params: {};
+    query: {};
+    next: null;
+  };
+  dropdown: {
+    name: "dropdown";
+    params: {};
+    query: {};
+    next: null;
+  };
+  imageViewer: {
+    name: "image-viewer";
     params: {};
     query: {};
     next: null;
