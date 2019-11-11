@@ -15,6 +15,7 @@ import PageDropdown from "./dropdown";
 import PageImageViewer from "./image-viewer";
 import PageTables from "./tables";
 import PageAbout from "./about";
+import PageModal from "./modal";
 
 let items: ISidebarEntry[] = [
   {
@@ -28,6 +29,10 @@ let items: ISidebarEntry[] = [
   {
     title: "Tabs",
     path: genRouter.tabs.name,
+  },
+  {
+    title: "Icons",
+    path: genRouter.icons.name,
   },
   {
     title: "Forms",
@@ -63,9 +68,15 @@ const renderChildPage = (routerTree: GenRouterTypeMain) => {
       return <PageButtons />;
     case "tabs":
       return <PageTabs />;
+    case "icons":
+      return <PageIcons />;
     case "forms":
       return <PageForms />;
     case "tabs":
+      return <PageTables />;
+    case "modal":
+      return <PageModal />;
+    case "tables":
       return <PageTables />;
     case "icons":
       return <PageIcons />;

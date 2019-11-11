@@ -8,7 +8,6 @@ import { parseRoutePath } from "@jimengio/ruled-router";
 import { routerRules } from "./models/router-rules";
 
 import Container from "./pages/container";
-import { demo } from "../src/index";
 import { GenRouterTypeMain } from "controller/generated-router";
 
 const renderApp = () => {
@@ -23,10 +22,10 @@ window.addEventListener("hashchange", () => {
   renderApp();
 });
 
-demo();
-
 declare var module: any;
 
-module.hot?.accept([], () => {
-  renderApp();
-});
+if (module.hot) {
+  module.hot.accept(["./pages/container"], () => {
+    renderApp();
+  });
+}
