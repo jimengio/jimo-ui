@@ -2,6 +2,7 @@ import ReactDOM from "react-dom";
 import React from "react";
 
 import "main.css";
+import "font-awesome/css/font-awesome.css";
 
 import { parseRoutePath } from "@jimengio/ruled-router";
 
