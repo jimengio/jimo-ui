@@ -16,11 +16,16 @@ import PageImageViewer from "./image-viewer";
 import PageTables from "./tables";
 import PageAbout from "./about";
 import PageModal from "./modal";
+import PageLayout from "./layout";
 
 let items: ISidebarEntry[] = [
   {
     title: "Home",
     path: genRouter.home.name,
+  },
+  {
+    title: "Layout",
+    path: genRouter.layout.name,
   },
   {
     title: "Buttons",
@@ -64,6 +69,8 @@ const renderChildPage = (routerTree: GenRouterTypeMain) => {
   switch (routerTree?.name) {
     case "home":
       return <PageAbout />;
+    case "layout":
+      return <PageLayout />;
     case "buttons":
       return <PageButtons />;
     case "tabs":

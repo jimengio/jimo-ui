@@ -21,6 +21,12 @@ export let genRouter = {
     path: () => `/home`,
     go: () => switchPath(`/home`),
   },
+  layout: {
+    name: "layout",
+    raw: "layout",
+    path: () => `/layout`,
+    go: () => switchPath(`/layout`),
+  },
   buttons: {
     name: "buttons",
     raw: "buttons",
@@ -85,6 +91,7 @@ export let genRouter = {
 
 export type GenRouterTypeMain =
   | GenRouterTypeTree["home"]
+  | GenRouterTypeTree["layout"]
   | GenRouterTypeTree["buttons"]
   | GenRouterTypeTree["tabs"]
   | GenRouterTypeTree["icons"]
@@ -99,6 +106,12 @@ export type GenRouterTypeMain =
 export interface GenRouterTypeTree {
   home: {
     name: "home";
+    params: {};
+    query: {};
+    next: null;
+  };
+  layout: {
+    name: "layout";
     params: {};
     query: {};
     next: null;
