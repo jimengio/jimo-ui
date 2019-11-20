@@ -9,3 +9,7 @@ template.ejs
 tsconfig.json
 webpack
 yarn.lock
+.awcache
+.vscode
+tsconfig*
+.prettierignore
