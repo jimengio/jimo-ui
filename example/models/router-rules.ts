@@ -15,6 +15,8 @@ export const routerRules: IRouteRule[] = [
     path: "drawer",
   },
   { path: "dropdown" },
+  { path: "confirm" },
+  { path: "clamp-text" },
   {
     path: "image-viewer",
   },
