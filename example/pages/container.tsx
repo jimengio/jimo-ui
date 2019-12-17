@@ -17,6 +17,8 @@ import PageTables from "./tables";
 import PageAbout from "./about";
 import PageModal from "./modal";
 import PageLayout from "./layout";
+import PageClampText from "./clamp-text";
+import PageConfirm from "./confirm";
 
 let items: ISidebarEntry[] = [
   {
@@ -63,6 +65,14 @@ let items: ISidebarEntry[] = [
     title: "Image Viewer",
     path: genRouter.imageViewer.name,
   },
+  {
+    title: "Confirm",
+    path: genRouter.confirm.name,
+  },
+  {
+    title: "Clamp text",
+    path: genRouter.clampText.name,
+  },
 ];
 
 const renderChildPage = (routerTree: GenRouterTypeMain) => {
@@ -93,6 +103,10 @@ const renderChildPage = (routerTree: GenRouterTypeMain) => {
       return <PageDropdown />;
     case "image-viewer":
       return <PageImageViewer />;
+    case "clamp-text":
+      return <PageClampText />;
+    case "confirm":
+      return <PageConfirm />;
     default:
       return (
         <HashRedirect to={genRouter.home.name} delay={2}>

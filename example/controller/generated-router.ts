@@ -75,6 +75,18 @@ export let genRouter = {
     path: () => `/dropdown`,
     go: () => switchPath(`/dropdown`),
   },
+  confirm: {
+    name: "confirm",
+    raw: "confirm",
+    path: () => `/confirm`,
+    go: () => switchPath(`/confirm`),
+  },
+  clampText: {
+    name: "clamp-text",
+    raw: "clamp-text",
+    path: () => `/clamp-text`,
+    go: () => switchPath(`/clamp-text`),
+  },
   imageViewer: {
     name: "image-viewer",
     raw: "image-viewer",
@@ -100,6 +112,8 @@ export type GenRouterTypeMain =
   | GenRouterTypeTree["modal"]
   | GenRouterTypeTree["drawer"]
   | GenRouterTypeTree["dropdown"]
+  | GenRouterTypeTree["confirm"]
+  | GenRouterTypeTree["clampText"]
   | GenRouterTypeTree["imageViewer"]
   | GenRouterTypeTree["$"];
 
@@ -160,6 +174,18 @@ export interface GenRouterTypeTree {
   };
   dropdown: {
     name: "dropdown";
+    params: {};
+    query: {};
+    next: null;
+  };
+  confirm: {
+    name: "confirm";
+    params: {};
+    query: {};
+    next: null;
+  };
+  clampText: {
+    name: "clamp-text";
     params: {};
     query: {};
     next: null;
