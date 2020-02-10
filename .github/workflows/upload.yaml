@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: docker://timbru31/java-node:latest
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
 
       - name: Get yarn cache
         id: yarn-cache
