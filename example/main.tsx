@@ -3,6 +3,7 @@ import React from "react";
 
 import "main.css";
 import "font-awesome/css/font-awesome.css";
+import "antd/dist/antd.css";
 
 import { parseRoutePath } from "@jimengio/ruled-router";
 

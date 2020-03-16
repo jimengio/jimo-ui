@@ -12,7 +12,7 @@ function qsStringify(queries: { [k: string]: any }) {
 
 // generated
 
-// Generated with router-code-generator@0.2.5
+// Generated with router-code-generator@0.2.6
 
 export let genRouter = {
   home: {
@@ -93,6 +93,12 @@ export let genRouter = {
     path: () => `/image-viewer`,
     go: () => switchPath(`/image-viewer`),
   },
+  debouncedInput: {
+    name: "debounced-input",
+    raw: "debounced-input",
+    path: () => `/debounced-input`,
+    go: () => switchPath(`/debounced-input`),
+  },
   $: {
     name: "home",
     raw: "",
@@ -115,6 +121,7 @@ export type GenRouterTypeMain =
   | GenRouterTypeTree["confirm"]
   | GenRouterTypeTree["clampText"]
   | GenRouterTypeTree["imageViewer"]
+  | GenRouterTypeTree["debouncedInput"]
   | GenRouterTypeTree["$"];
 
 export interface GenRouterTypeTree {
@@ -192,6 +199,12 @@ export interface GenRouterTypeTree {
   };
   imageViewer: {
     name: "image-viewer";
+    params: {};
+    query: {};
+    next: null;
+  };
+  debouncedInput: {
+    name: "debounced-input";
     params: {};
     query: {};
     next: null;

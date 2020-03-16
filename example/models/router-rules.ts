@@ -20,5 +20,8 @@ export const routerRules: IRouteRule[] = [
   {
     path: "image-viewer",
   },
+  {
+    path: "debounced-input",
+  },
   { path: "", name: "home" },
 ];
