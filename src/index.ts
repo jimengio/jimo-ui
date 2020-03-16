@@ -1,3 +1,7 @@
+import DebouncedInput from "./work/debounced-input";
+
+export { DebouncedInput };
+
 export * from "@jimengio/jimo-basics";
 export * from "@jimengio/flex-styles";
 export * from "@jimengio/meson-form";
