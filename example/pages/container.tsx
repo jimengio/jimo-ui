@@ -19,6 +19,7 @@ import PageModal from "./modal";
 import PageLayout from "./layout";
 import PageClampText from "./clamp-text";
 import PageConfirm from "./confirm";
+import PageDebouncedInput from "./debounced-input";
 
 let items: ISidebarEntry[] = [
   {
@@ -73,6 +74,10 @@ let items: ISidebarEntry[] = [
     title: "Clamp text",
     path: genRouter.clampText.name,
   },
+  {
+    title: "DebouncedInput",
+    path: genRouter.debouncedInput.name,
+  },
 ];
 
 const renderChildPage = (routerTree: GenRouterTypeMain) => {
@@ -107,6 +112,8 @@ const renderChildPage = (routerTree: GenRouterTypeMain) => {
       return <PageClampText />;
     case "confirm":
       return <PageConfirm />;
+    case "debounced-input":
+      return <PageDebouncedInput />;
     default:
       return (
         <HashRedirect to={genRouter.home.name} delay={2}>
