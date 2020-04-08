@@ -3,6 +3,7 @@ import React from "react";
 import { useDebouncedCallback } from "use-debounce";
 import Input, { InputProps } from "antd/lib/input";
 import JimoIcon, { EJimoIcon } from "@jimengio/jimo-icons";
+import { css } from "emotion";
 
 export interface DebouncedInputProps extends InputProps {
   wait?: number;
@@ -26,6 +27,7 @@ const DebouncedInput: React.FC<DebouncedInputProps> = (props) => {
   const iconStyle: React.CSSProperties = {
     fontSize: "1.6em",
     color: "#d9d9d9",
+    lineHeight: "22px",
     ...searchIconStyle,
   };
 
@@ -46,9 +48,15 @@ const DebouncedInput: React.FC<DebouncedInputProps> = (props) => {
 
   const suffixNode = !hideSearch && !suffix ? <JimoIcon style={iconStyle} name={EJimoIcon.search} /> : suffix;
 
-  return <Input style={inputStyle} defaultValue={defaultValue} value={keyword} onChange={onChangeEvent} suffix={suffixNode} {...rest} />;
+  return <Input style={inputStyle} className={styleInput} defaultValue={defaultValue} value={keyword} onChange={onChangeEvent} suffix={suffixNode} {...rest} />;
 };
 
 DebouncedInput.defaultProps = defaultProps;
 
 export default DebouncedInput;
+
+let styleInput = css`
+  .ant-input {
+    flex-shrink: 1;
+  }
+`;
