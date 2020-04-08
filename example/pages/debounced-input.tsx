@@ -28,7 +28,7 @@ let PageTabs: FC<{}> = React.memo((props) => {
       <DocDemo title="DebouncedInput" link={null}>
         <DebouncedInput onDebouncedChange={(v) => setValue1(v)} />
         <p>value: {value1}</p>
-        <DebouncedInput style={{ width: "100%" }} hideSearch onDebouncedChange={(v) => setValue2(v)} />
+        <DebouncedInput width="100%" hideSearch onDebouncedChange={(v) => setValue2(v)} />
         <p>value: {value2}</p>
         <DocSnippet code={codeTabs} />
       </DocDemo>

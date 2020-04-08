@@ -20,7 +20,7 @@ const DebouncedInput: React.FC<DebouncedInputProps> = (props) => {
   const { defaultValue, value, hideSearch, searchIconStyle, suffix, onChange, onDebouncedChange, wait, style, ...rest } = props;
 
   const inputStyle: React.CSSProperties = {
-    width: 220,
+    width: props.width || 220,
     ...style,
   };
   const iconStyle: React.CSSProperties = {
@@ -32,7 +32,7 @@ const DebouncedInput: React.FC<DebouncedInputProps> = (props) => {
   // value 不同步
   const [keyword, setKeyword] = React.useState(value || defaultValue);
 
-  const [debouncedChange] = useDebouncedCallback((v, e) => {
+  const [debouncedChange] = useDebouncedCallback((v: string, e: React.ChangeEvent<HTMLInputElement>) => {
     e.persist();
     onDebouncedChange && onDebouncedChange(v, e);
   }, wait);
