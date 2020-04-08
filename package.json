@@ -69,15 +69,15 @@
     "use-debounce": "^3.4.0"
   },
   "dependencies": {
-    "@jimengio/dropdown": ">=0.1.27",
-    "@jimengio/flex-styles": ">=0.1.6",
-    "@jimengio/image-viewer": ">=0.1.14",
-    "@jimengio/jimo-basics": ">=0.0.15",
-    "@jimengio/jimo-icons": ">=0.3.7",
-    "@jimengio/meson-form": ">=0.4.4",
-    "@jimengio/meson-modal": ">=0.3.5",
-    "@jimengio/rough-table": ">=0.2.17",
-    "@jimengio/shared-utils": ">=0.1.5",
+    "@jimengio/dropdown": "^0.1.27",
+    "@jimengio/flex-styles": "^0.1.6",
+    "@jimengio/image-viewer": "^0.1.14",
+    "@jimengio/jimo-basics": "^0.0.15",
+    "@jimengio/jimo-icons": "^0.3.7",
+    "@jimengio/meson-form": "^0.4.4",
+    "@jimengio/meson-modal": "^0.3.5",
+    "@jimengio/rough-table": "^0.2.17",
+    "@jimengio/shared-utils": "^0.1.5",
     "dayjs": "^1.8.23",
     "emotion": "^10.0.27"
   }
