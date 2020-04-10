@@ -199,7 +199,7 @@
     react-transition-group "^4.3.0"
     use-immer "0.3.5"
 
-"@jimengio/meson-modal@^0.3.5":
+"@jimengio/meson-modal@^0.3.6":
   version "0.3.6"
   resolved "https://registry.npmjs.org/@jimengio/meson-modal/-/meson-modal-0.3.6.tgz#518566e4d43396a1db136eb21df17a072655faf9"
   integrity sha512-zpDqnIa/8cE5E+cGznb7b7fK2asSAIPhxzvObCVz/BY2l0StfFwhFGwhtHxvTy7SYclte+x93DtlOhkNUGFXpw==
