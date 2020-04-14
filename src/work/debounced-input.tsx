@@ -5,7 +5,7 @@ import Input, { InputProps } from "antd/lib/input";
 import JimoIcon, { EJimoIcon } from "@jimengio/jimo-icons";
 
 export interface DebouncedInputProps extends InputProps {
-  /** defaults to 300 */
+  /** defaults to 600 */
   wait?: number;
   /** defaults to { width: 220px } */
   style?: CSSProperties;
@@ -16,7 +16,7 @@ export interface DebouncedInputProps extends InputProps {
 }
 
 const defaultProps: Partial<DebouncedInputProps> = {
-  wait: 300,
+  wait: 600,
   style: { width: 220 },
 };
 
